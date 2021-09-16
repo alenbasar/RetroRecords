@@ -5,7 +5,7 @@ This is a retro LP record store which includes a product page, forum, cart and c
 ### Stack
 - PHP8
 - HTML5
-- CSS3
+- SCSS
 - MariaDB
 - JavaScript
 
