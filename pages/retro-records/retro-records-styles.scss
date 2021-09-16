@@ -1,0 +1,137 @@
+@import url('../../styles/general/general.css');
+@import url('../../styles/header/header.css');
+@import url('../../styles/footer/footer.css');
+@import url('../../styles/media_queries/media_queries.css');
+main {
+  // background-color: #60a9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  // min-height: 100vh;
+  flex-direction: column;
+  h1 {
+    color: white;
+    margin-top: 5px;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.panel {
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+.pricing-img {
+  margin-bottom: 25px;
+  /* width: 100%; */
+  max-width: 100%;
+}
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.pricing-img {
+  margin-bottom: 25px;
+  /* width: 100%; */
+  max-width: 100%;
+}
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-price {
+  color: #016ff9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: all 0.2s ease-in-out;
+}
+.pricing-button:hover,
+.pricing-button:focus {
+  border: 1px solid rgb(247, 224, 96);
+  color: rgb(247, 224, 96);
+  transform: translateY(-0.5em);
+}
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: white;
+}
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: transparent;
+  border: 1px solid rgb(247, 224, 96);
+  color: white;
+}
+@media (min-width: 900px) {
+  main {
+    // flex-direction: column;
+    // height: 100%;
+    h1 {
+      display: none;
+    }
+  }
+  body {
+    background-image: url('../../images/eric-krull-fi3_lDi3qPE-unsplash.jpg');
+    background-size: cover;
+  }
+
+  .panel.pricing-table {
+    border: 1px solid rgb(247, 224, 96);
+    border-radius: 30px;
+    height: 100%;
+    // background-image: url('../images/steve-harvey-LUMT0EeNnjE-unsplash.jpg');
+    background-color: rgb(49, 49, 49);
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-bottom: 10%;
+    font-family: 'Montserrat', sans-serif;
+    // justify-content: space-evenly;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+    flex: 1;
+    .pricing-img {
+      width: 200px;
+      border: 1px solid black;
+      border-radius: 30px;
+    }
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
+}

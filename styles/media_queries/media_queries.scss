@@ -1,0 +1,159 @@
+@media (max-width: 992px) {
+  html {
+    height: 100%;
+  }
+  header {
+    // flex-direction: column;
+    // margin: 0;
+    // padding: 0;
+    // justify-content: center;
+    // // align-items: right;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    display: block;
+    border: none;
+    border-radius: 0;
+    // width: 100%;
+    margin: 0;
+    padding: 0;
+
+    img {
+      display: none;
+    }
+    .desktopMenu {
+      // max-width: 500px;
+      // flex-grow: 1;
+      display: none;
+    }
+
+    .mobileMenu {
+      width: 300px;
+      height: 100%;
+      background-color: #24252a;
+      position: fixed;
+      top: 0;
+      right: -300px;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: all 0.5s ease-in-out;
+    }
+    .change {
+      right: 0px;
+    }
+
+    .hamburger-menu {
+      width: 35px;
+      height: 30px;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .line {
+        width: 100%;
+        height: 3px;
+        background-color: #f7e060;
+        transition: all 0.3s;
+      }
+      .change1 {
+        transform: rotateZ(-405deg) translate(-8px, 6px);
+      }
+      .change2 {
+        opacity: 0;
+      }
+      .change3 {
+        transform: rotateZ(405deg) translate(-8px, -6px);
+      }
+    }
+    .nav-list {
+      text-align: right;
+      .nav-item {
+        list-style: none;
+        margin: 25px;
+      }
+      .nav-link {
+        text-decoration: none;
+        font-size: 22px;
+        color: #eee;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 3px 0;
+      }
+      .nav-link::before,
+      .nav-link::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: #f7e060;
+        position: absolute;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in;
+      }
+      .nav-link::after {
+        bottom: 0;
+        transform-origin: right;
+      }
+      .nav-link::before {
+        top: 0;
+        transform-origin: left;
+      }
+      .nav-link:hover::before,
+      .nav-link:hover::after {
+        transform: scaleX(1);
+      }
+    }
+    .d-cta {
+      display: none;
+    }
+  }
+  main {
+    background-image: url('../../images/vincent-chan--ja1xVOENMo-unsplash.jpg');
+    height: 100%;
+    background-size: cover;
+
+    section {
+      h1:nth-of-type(1) {
+        padding-top: 50px;
+        font-size: 10vw;
+      }
+      img {
+        width: 50px;
+      }
+      p {
+        margin: 0 10%;
+      }
+    }
+    section:nth-of-type(3) {
+      margin-bottom: 0px;
+    }
+
+    .panel {
+      // border-top: 1px solid white;
+      border-radius: 0;
+      margin-top: 10%;
+      .pricing-plan {
+        border: none;
+        .pricing-img {
+          margin-top: 10%;
+          width: 30%;
+        }
+      }
+    }
+  }
+  footer {
+    padding: 0;
+
+    p {
+      padding: 5px;
+      font-size: 0.8em;
+    }
+  }
+}

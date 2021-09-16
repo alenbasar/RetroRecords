@@ -1,0 +1,142 @@
+@import url("./styles/general/general.css");
+@import url("./styles/keyframes/keyframes.css");
+@import url("./styles/header/header.css");
+@import url("./styles/main/main.css");
+@import url("./styles/footer/footer.css");
+@import url("./styles/media_queries/media_queries.css");
+@import url("./styles/forum/forum.css");
+@import url("./styles/forum/base.css");
+@import url("../styles/shop/shop.css");
+#o-list {
+  background-color: black;
+}
+
+.panel {
+  border-radius: 10px;
+  margin: auto;
+  width: 100%;
+  max-width: 960px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  /* width: 100%; */
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-img {
+  margin-bottom: 25px;
+  /* width: 100%; */
+  max-width: 100%;
+}
+
+.pricing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pricing-price {
+  color: #016ff9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-button {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.pricing-button:hover {
+  border: 1px solid #f7e060;
+  color: #f7e060;
+  -webkit-transform: translateY(-0.5em);
+          transform: translateY(-0.5em);
+}
+
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: white;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: transparent;
+  border: 1px solid #f7e060;
+  color: white;
+}
+
+@media (min-width: 900px) {
+  .panel.pricing-table {
+    margin-top: 3em;
+    border: 1px solid #f7e060;
+    border-radius: 30px;
+    background-color: rgba(70, 70, 70, 0.7);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-family: "Montserrat", sans-serif;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #f7e060;
+    padding: 25px 50px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .pricing-plan .pricing-img {
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 30px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=app.css.map */

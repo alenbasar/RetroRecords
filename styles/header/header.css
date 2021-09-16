@@ -1,0 +1,74 @@
+header {
+  margin: 20px 10%;
+  border-radius: 2em;
+  border: 1px solid #f7e060;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 10%;
+  background-color: #24252a;
+}
+
+header .logo {
+  cursor: pointer;
+  width: 200px;
+}
+
+header .desktopMenu {
+  width: 50%;
+}
+
+header .desktopMenu .nav__links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header .desktopMenu .nav__links li {
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .desktopMenu .nav__links li:hover {
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+header .desktopMenu .nav__links li:hover a {
+  color: #f7e060;
+}
+
+header .mobileMenu {
+  display: none;
+}
+
+header .d-cta,
+header .m-cta {
+  padding: 9px 25px;
+  background-color: #00889f;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header .d-cta:hover,
+header .m-cta:hover {
+  background-color: rgba(0, 136, 159, 0.8);
+}
+/*# sourceMappingURL=header.css.map */

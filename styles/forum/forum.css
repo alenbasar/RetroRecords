@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #dfdede;
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem;
+}
+
+.c-topic-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 2rem 0 0 2rem;
+  padding: 0;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  max-height: 600px;
+  margin: auto;
+  border-spacing: 1rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.356);
+}
+
+.c-topic-table tr,
+.c-topic-table th,
+.c-topic-table td {
+  border: 1px solid #949494;
+  border-radius: 2rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+p .c-add-topic-button {
+  font-size: large;
+  border: 1px solid grey;
+  padding: 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+p .c-add-topic-button:hover {
+  background-color: #8a8a8a;
+  color: #363636;
+}
+
+.c-topic-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-topic-form__dropdown {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0.5rem;
+}
+
+.c-topic-form__submit {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.c-post-table {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.c-post-table td,
+.c-post-table th,
+.c-post-table tr {
+  border: 1px solid black;
+  padding: 1rem;
+  text-align: center;
+}
+/*# sourceMappingURL=forum.css.map */

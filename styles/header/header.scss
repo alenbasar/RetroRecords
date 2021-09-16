@@ -1,0 +1,52 @@
+header {
+  margin: 20px 10%;
+  border-radius: 2em;
+  border: 1px solid #f7e060;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #24252a;
+  .logo {
+    cursor: pointer;
+    // border-radius: 47%;
+    width: 200px;
+  }
+  .desktopMenu {
+    width: 50%;
+    .nav__links {
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+      li:hover {
+        a {
+          color: rgb(247, 224, 96);
+        }
+        transform: translateY(-0.25em);
+      }
+    }
+  }
+  .mobileMenu {
+    display: none;
+  }
+
+  .d-cta,
+  .m-cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 159, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  .d-cta:hover,
+  .m-cta:hover {
+    background-color: rgba(0, 136, 159, 0.8);
+  }
+}

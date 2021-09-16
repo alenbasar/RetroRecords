@@ -1,0 +1,15 @@
+@keyframes slideH1 {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+@keyframes slideP {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+}

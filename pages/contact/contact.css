@@ -1,0 +1,107 @@
+@import url("../../styles/general/general.css");
+@import url("../../styles/header/header.css");
+@import url("../../styles/footer/footer.css");
+@import url("../../styles/media_queries/media_queries.css");
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+main fieldset {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #f7e060;
+  color: white;
+  background-color: #24252a;
+  border-radius: 50px;
+}
+
+main fieldset legend {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  border: 1px solid #f7e060;
+  padding: 10px;
+  background-color: #24252a;
+  border-radius: 50px;
+}
+
+main fieldset form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main fieldset form .input {
+  margin: 10px;
+}
+
+main fieldset form .input label {
+  text-align: center;
+}
+
+main fieldset form .input input {
+  display: block;
+  border-radius: 50px;
+  padding: 5px;
+  background-color: beige;
+}
+
+main fieldset form .input-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main fieldset form .input-message textarea {
+  border-radius: 30px;
+  padding: 10px;
+  background-color: beige;
+}
+
+main fieldset form .submit-button button {
+  margin-top: 10px;
+  color: #24252a;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=contact.css.map */
