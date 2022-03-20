@@ -9,7 +9,6 @@ This is a retro LP record store which includes a product page, forum, cart and c
 - MariaDB
 - JavaScript
 
-
 ### Screenshots
 
 ![Home](https://user-images.githubusercontent.com/63575553/133590165-11055a31-a979-490d-85d1-94ed5e102dba.JPG)
